@@ -546,7 +546,7 @@ html {
 
     align-items: center;
 }
-@media (max-width: 1199px) and (min-width: 768px){
+@media (max-width: 1199px) and (min-width: 992px){
 .hidden-md {
     display: none!important;
 }}
@@ -559,6 +559,10 @@ html {
  }
 
 }
+@media (max-width: 991px) and (min-width: 768px){
+.hidden-sm {
+    display: none!important;
+}}
 
 @media (max-width: 1600px) and (min-width: 992px){
 .hidden-md {
@@ -630,6 +634,17 @@ html {
     display: block;
     background: 0 0;
     transition: all .3s ease
+}
+@media (max-width: 991px){
+#header .col {
+    height: 70px;
+    width: auto;
+    margin-right: 20px;
+}}
+#main_book a:hover {
+        background: 0 0;
+        border-color: var(--main_color);
+        color: var(--main_color);
 }
 .fotito{
     width: 100%;
@@ -710,11 +725,7 @@ html {
 .main_content.aside_content .container .content_wrap .inner_wrap .the_title {
     font-size: 28px;
 }}
-.main_content .the_content, .main_content .the_subtitle, .main_content .the_title {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .section_title, .the_title {
     font-weight: 600;
     font-style: normal;
@@ -727,11 +738,7 @@ html {
     text-align: center;
     margin-bottom: .5em;
 }
-.main_content .the_content, .main_content .the_subtitle, .main_content .the_title {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .the_content blockquote:before {
     content: '\201C';
     padding-right: 5px;
@@ -822,10 +829,19 @@ html {
     bottom: auto;
     margin-bottom: 40px;
 }
+}
 
 
-
-
+.the_subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-family: var(--first_font);
+    line-height: 150%;
+    position: relative;
+    color: var(--title_color);
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 1.5em;
 }
 
 /*Section HABITACION*/
@@ -893,6 +909,23 @@ html {
 }}
 .the_title{
     cursor: pointer;
+    font-weight: 600;
+    font-style: normal;
+    font-family: var(--first_font);
+    line-height: 120%;
+    position: relative;
+    letter-spacing: 0.05em;
+    color: var(--title_color);
+    font-size: 32px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-bottom: 0.5em;
+    display: block;
+}
+.the_title:hover{
+    text-decoration: underline;
+    color: var(--hover_color);
+
 }
 
 
@@ -1190,14 +1223,33 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 4px;
     transition: transform 0.3s ease-in-out;
     border: solid 1px rgb(255, 255, 255);
 }
+.cat_label {
+    font-size: .9em;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.grid-foto a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
 .grid-foto:hover{
     filter: opacity(0.9);
     transform: scale(1.04);
+
 }
 @media (max-width: 767px){
     .container {
