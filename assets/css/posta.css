@@ -243,6 +243,11 @@ html {
 #skip_to_content:hover .label {
     text-decoration: underline
 }
+
+.animate__slideOutRight, .animate__zoomIn{
+    animation-timing-function: ease-in-out;
+    animation-duration: .8s;
+}
 #lang_selector .icon {
     font-size: 28px;
     margin-left: 10px
