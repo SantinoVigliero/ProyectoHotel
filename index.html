@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/posta.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
@@ -37,16 +36,113 @@
         <nav class="nav">
                 <div id="header">
                     <div class="container nav_container">
-                        <label for="menu_nav" class="nav_lavel">
-                            <i class="fa-solid fa-bars icon  nav_i" style="padding: 30px;"></i>
-                        </label>
-                        <input type="checkbox" id="menu_nav" class="nav_input">
                         
+                        <label for="menu_hamb" class="lavel_menu_open">
+                            <i class="fa-solid fa-bars icon  nav_i" style="padding: 30px; color: #000; "></i>
+                        </label>
+                        <input type="checkbox" id="menu_hamb" class="nav_input">
+                        <div id="menu_sidebar_wrap" class="visible" >
+                            <div class="menu_sidebar">
+                                <label for="close_menu" >
+                                </label>
+                                <input type="checkbox" id="close_menu" class="nav_input_close">
+                                <a href="" class="close_sidebar close" title="Close main menu"></a>
+                                <div class="menu_sidebar_inner_content">
+                                    <div class="title">Palladio Hotel Buenos Aires MGallery</div>
+                                    <div id="sidebar_menu">
+                                        <ul id="menu-hamburger-menu-2" class="menu">
+                                            <li class="menu-item current-menu-item">
+                                                <a href="index.html" aria-current="page">Inicio</a>
+                                            </li>
+                                            <li class="menu-item current-menu-item">
+                                                <a href="./assets/views/habitaciones.html">Habitaciones</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item current-menu-item">
+                                                        <a href="./assets/views/habitaciones/habitacion-superior-con-cama-king-size.html">Habitación Superior con cama king size</a>
+                                                    </li>
+                                                    <li class="menu-item current-menu-item">
+                                                        <a href="./assets/views/habitaciones/habitacion-deluxe-con-cama-king-size-y-balcon-privado.html">Habitación Deluxe con cama king size y balcón privado</a>
+                                                    </li>
+                                                    <li class="menu-item current-menu-item">
+                                                        <a href="./assets/views/habitaciones/executive-room-con-cama-king-size-balcon-privado-y-sofa-cama.html">Executive Room con cama king size, balcón privado y sofá cama</a>
+                                                    </li>
+                                                    <li class="menu-item current-menu-item">
+                                                        <a href="./assets/views/habitaciones/executive-room-con-2-camas-queen-size-y-balcon-privado.html">Executive Room con 2 camas queen size y balcón privado</a>
+                                                    </li>
+                                                    <li class="menu-item current-menu-item">
+                                                        <a href="./assets/views/habitaciones/deluxe-suite-con-cama-king-size-balcon-privado-y-sofa-cama.html">Deluxe Suite con cama king size, balcón privado y sofá cama</a>
+                                                    </li>
+                                                    <li class="menu-item current-menu-item">
+                                                        <a href="./assets/views/habitaciones/deluxe-suite-con-2-camas-queen-size-y-balcon-privado.html">Deluxe Suite con 2 camas queen size y balcón privado</a>
+                                                    </li>
+                                                    <li class="menu-item current-menu-item">
+                                                        <a href="./assets/views/habitaciones/executive-suite-con-cama-king-size-y-exclusiva-vista-de-la-ciudad.html">Executive Suite con cama king size y exclusiva vista de la ciudad</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item current-menu-item">
+                                                <a href="./assets/views/gastronomia.html">Gastronomía</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item current-menu-item">
+                                                        <a href="./assets/views/gastronomia/negresco_bistro.html">Negresco Bistró</a>
+                                                    </li>
+                                                    <li class="menu-item current-menu-item">
+                                                        <a href="./assets/views/gastronomia/negresco_bar.html">Negresco Bar</a>
+                                                    </li>
+                                                    <li class="menu-item current-menu-item">
+                                                        <a href="./assets/views/gastronomia/terraza.html">La Terraza</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item current-menu-item">
+                                                <a href="./assets/views/galeria.html">Galería de fotos</a>
+                                            </li> 
+                                            <li class="menu-item current-menu-item">
+                                                <a href="./assets/views/reuniones.html">Reuniones</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item current-menu-item">
+                                                        <a href="./assets/views/reuniones/rodriguez_peña.html">Rodríguez Peña</a>
+                                                    </li>
+                                                    <li class="menu-item current-menu-item">
+                                                        <a href="./assets/views/reuniones/pizzurno.html">Pizzurno</a>
+                                                    </li>
+                                                    <li class="menu-item current-menu-item">
+                                                        <a href="./assets/views/reuniones/boardroom_1.html">Boardroom 1</a>
+                                                    </li>
+                                                    <li class="menu-item current-menu-item">
+                                                        <a href="./assets/views/reuniones/boardroom_2.html">Boardroom 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>    
+                                    </div>
+                                    <div class="address">
+                                        <span class="element element_address">
+                                            <span class="element_data">Avenida Callao 924
+                                                Recoleta - C1023AAP
+                                                Buenos Aires
+                                                Argentina
+                                            </span>
+                                        </span>
+                                        <span class="element element_telephone">
+                                            <span class="element_pref">Teléfono</span>
+                                            <span class="element_data">+54 11 4700 7500</span>
+                                        </span>
+                                        <span class="element element_email">
+                                            <span class="element_pref">Email</span>
+                                            <span class="element_data">
+                                                <a href="mailto:recepcion.palladio@accor.com">recepcion.palladio@accor.com</a>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                             <div class="col col_left nav_menu">
                                 <div class="menu_left hidden-xs hidden-sm">
                                     <ul class="menu">
-                                        <li  class="menu-item ">
-                                            <a href="./assets/views/habitaciones.html" class="nav_item">Habitaciones</a>
+                                        <li  class="menu-item nav_item">
+                                            <a href="./assets/views/habitaciones.html" class="">Habitaciones</a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item ">
                                                     <a href="./assets/views/habitaciones/habitacion-superior-con-cama-king-size.html">Habitación Superior con cama King size</a>
@@ -71,8 +167,8 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="menu-item ">
-                                            <a href="./assets/views/gastronomia.html" class="nav_item">Gastronomía</a>
+                                        <li class="menu-item nav_item">
+                                            <a href="./assets/views/gastronomia.html" class="">Gastronomía</a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item ">
                                                     <a href="./assets/views/gastronomia/negresco_bistro.html">Negresco Bistró</a>
@@ -92,14 +188,14 @@
                                 <img src="./assets/img/Logo MGallery Hotel Collection.svg" alt="Alternative MGallery logo" class="main">
                                 <img src="https://mgallerypalladiohotel.accorv2prod.decms.eu/wp-content/themes/accorv2-mgallery/images/logo_white.svg" alt="Alternative MGallery logo" class="custom">
                             </a>
-                            <div class="col col_right hidden-xs hidden-sm nav_menu ">
+                            <div class="col col_right hidden-xs hidden-sm nav_menu">
                                 <div class="menu_right">
                                     <ul id="menu-hamburger-menu-1" class="menu">
-                                        <li class="menu-item ">
-                                            <a href="./assets/views/galeria.html" class="nav_item">Galería</a>
+                                        <li class="menu-item nav_item">
+                                            <a href="./assets/views/galeria.html" class="">Galería</a>
                                         </li>
-                                        <li class="menu-item">
-                                            <a href="./assets/views/reuniones.html" class="nav_item">Reuniones</a>
+                                        <li class="menu-item nav_item">
+                                            <a href="./assets/views/reuniones.html" class="">Reuniones</a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item">
                                                     <a href="./assets/views/reuniones/rodriguez_peña.html">Rodríguez Peña</a>
@@ -122,13 +218,39 @@
                                 </div>
                             </div>
                             <a id="hotel_name_mobile" class="hidden-md hidden-lg" href="index.html" title="Volver a la página de inicio"><span>Palladio Hotel Buenos Aires MGallery</span></a>
-                        
+                            
                     </div>
                 </div>
+
             </nav>
         </div>
     </div>
-    <img src="./assets/img/Habitaciones/Executive Suite con cama king size y exclusiva vista de la ciudad (1).jpg" alt="Executive Suite con cama king size y exclusiva vista de la ciudad" class="fotito">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/Habitaciones/Executive Suite con cama king size y exclusiva vista de la ciudad (1).jpg" class="d-block w-100 fotito" alt="Executive Suite con cama king size y exclusiva vista de la ciudad">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/Gastronomia/Negresco Bistro/Foto Negresco Bistró 2.jpg" class="d-block w-100 fotito" alt="Foto del restaurante">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/Reuniones/Boardroom 2 (1).jpg" class="d-block w-100 fotito" alt="Foto de sala de reuniones Boardroom 2">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguente</span>
+        </button>
+      </div>
     
     
     
@@ -143,7 +265,7 @@
                     <div class="custom_logo">
                         <img class="lazy" src="./assets/img/Logo Palladio Hotel.png" alt="Logo of Visite Palladio Hotel y disfrute de una estadía inolvidable en Buenos Aires."></img>
                     </div>
-                    <h1 class="the_title animate__slideOutRight" style="color: var(--title_color);text-decoration: none!important; cursor: default;">Visite Palladio Hotel y disfrute de una estadía inolvidable en Buenos Aires.</h1>
+                    <h1 class="the_title" style="color: var(--title_color);text-decoration: none!important; cursor: default;">Visite Palladio Hotel y disfrute de una estadía inolvidable en Buenos Aires.</h1>
                     <div class="below_the_title"></div>
                     <div class="the_content main_the_content">
                         <blockquote>
@@ -168,7 +290,7 @@
             <div class="content_wrap">
                 <div class="inner_wrap">
                     <a class="title titlecontent" href="./assets/views/habitaciones.html"  style="text-decoration: none">
-                        <h1 class="the_title animate__zoomIn">Habitaciones</h1>
+                        <h1 class="the_title">Habitaciones</h1>
                     </a>
                     <div class="below_the_title"></div>
                     <div class="description">El hotel dispone de 113 elegantes habitaciones de diseño moderno, donde se destacan sus amplios y luminosos ambientes con grandes ventanales, que conectan con balcón privado invitándolo a disfrutar de una fantástica vista de la…
@@ -198,7 +320,7 @@
             <div class="content_wrap">
                 <div class="inner_wrap">
                     <a class="title titlecontent" href="./assets/views/habitaciones.html"  style="text-decoration: none">
-                        <h1 class="the_title animate__zoomIn">Gastronomía</h1>
+                        <h1 class="the_title">Gastronomía</h1>
                     </a>
                     <div class="below_the_title"></div>
                     <div class="description">Disfrute de una experiencia gastronómica única. Un viaje de sabores con lo mejor de la cocina mediterránea, combinada con un excelente servicio en un ambiente moderno y elegante. Servicio a la habitación Deléitese con deliciosos…                       
@@ -221,7 +343,7 @@
             <div class="content_wrap">
                 <div class="inner_wrap">
                     <a class="title titlecontent" href="./assets/views/habitaciones.html" style="text-decoration: none">
-                        <h1 class="the_title animate__zoomIn">Reuniones y Eventos</h1>
+                        <h1 class="the_title">Reuniones y Eventos</h1>
                     </a>
                     <div class="below_the_title"></div>
                     <div class="description">Contanos qué estás necesitando, nuestro equipo de Marketing y Ventas te ayudará a planificarlo. Palladio Hotel ofrece 2 elegantes salones para usar juntos o divisibles, que se destacan por su exquisita boisserie combinando el estilo…                                            
@@ -250,7 +372,7 @@
     
 
     <!-- FOOTER -->
-<footer>
+    <footer>
     <div id="footer_wrapper">
         <div id="footer_top">
             <div class="container_footer">
@@ -281,13 +403,15 @@
         </div>
     </div>
 
-</footer>
-
+    </footer>
+    
 
     
     
 
- 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</body>
 </html>
 
 
