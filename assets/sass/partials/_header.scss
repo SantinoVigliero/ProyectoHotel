@@ -47,10 +47,10 @@
         .col.col_right{
             justify-content: flex-end;
             #lang_selector{
-                display: block;
+                display: block!important;
                 color: $header_color;
                 text-decoration: none;
-                display: flex;
+                text-align: right;
                 align-items: center;
                 &:hover .label_español{
                     text-decoration: underline;
@@ -650,7 +650,7 @@ nav>div>div>label>a>i:hover {
 
 .nav_input:checked + #menu_sidebar_wrap{
     clip-path: circle(100% at center);
-    display: block;
+    display: block!important;
 }
 .label_menu_open:hover{
     cursor: pointer;
