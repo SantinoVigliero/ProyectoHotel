@@ -1,4 +1,11 @@
-.container {
+.fotito{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@mixin basic{
     position: relative;
     margin-right: auto;
     margin-left: auto;
@@ -6,10 +13,21 @@
     padding-right: 10px;
     width: 100%;
 }
-.fotito{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-
+.container {
+    @include basic;
 }
+@mixin basicwh{
+    height: auto;
+    width: auto;
+}
+@mixin marginbasic{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+$estilosmenu: (
+ width:calc(100% / 2 - 40px),
+ display: flex,
+ alignitems: center,
+ height: 90px
+);

@@ -69,22 +69,19 @@
     }
     &.aside_content {
         width: calc(100% - 40px);
-        margin-left: auto;
-        margin-right: auto;
+        @include marginbasic;
         max-width: 1700px;
     }
     .the_title {
         max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
+        @include marginbasic;
     }
 }
 .section {
     position: relative;
     z-index: 100;
     width: calc(100% - 60px);
-    margin-left: auto;
-    margin-right: auto;
+    @include marginbasic;
 }
 .main_content.aside_content .container {
     max-width: 100%;
@@ -96,9 +93,8 @@
         margin-bottom: 40px;
         min-height: 450px;
         .thumb {
-            width: auto;
+            @include basicwh;
             right: 0;
-            height: auto;
             left: 40px;
             bottom: 0;
             top: 40px;
@@ -130,16 +126,7 @@
 .main_content.aside_content .container .content_wrap {
     width: 100%;
 }
-.main_content.aside_content .container .aside .thumb {
-    width: 100%;
-    position: relative;
-    height: 0;
-    padding-bottom: 60%;
-    top: auto;
-    left: auto;
-    bottom: auto;
-    margin-bottom: 40px;
-}
+
 .section_title, .the_title {
     font-weight: 600;
     font-style: normal;
@@ -204,16 +191,14 @@
     position: relative;
     z-index: 100;
     width: calc(100% - 60px);
-    margin-left: auto;
-    margin-right: auto;
+    @include marginbasic;
     &.main_content .custom_logo {
         margin: 0 auto 2em;
         text-align: center;
         img {
             max-width: 180px;
             max-height: 180px;
-            height: auto;
-            width: auto;
+            @include basicwh;
         }
     }
 
@@ -224,8 +209,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-right: auto;
-    margin-left: auto;
+    @include marginbasic;
     padding-left: 10px;
     padding-right: 10px;
     width: 100%;
@@ -289,10 +273,21 @@
     .description, .the_content {
         font-size: 1.08em;
     }
+    
 }
 @media (max-width: 991px){
     .main_content.aside_content .container {
         flex-direction: column-reverse;
+    }
+    .thumb {
+        width: 100%!important;
+        position: relative!important;
+        height: 0!important;
+        padding-bottom: 60%!important;
+        top: auto!important;
+        left: auto!important;
+        bottom: auto!important;
+        margin-bottom: 40px!important;
     }
 }
 @media (min-width: 768px){
@@ -330,8 +325,7 @@
     .filters_wrap {
         flex-direction: column;
         width: 100%;
-        margin-right: auto;
-        margin-left: auto;
+        @include marginbasic;
         padding-right: 10px;
         padding-left: 10px;
         .label {
@@ -390,10 +384,3 @@
         padding: 0;
     }
 }
-
-
-
-
-
-
-

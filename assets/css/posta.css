@@ -112,7 +112,7 @@ html {
     --alternative_background:#F8F8F8;
     --highlight_color:#B9854D;
     --highlight_color_associate:#000;
-    --main_color:#0A1317;
+    --main_color: #0A1317;
     --main_color_associate:#fff;
     --hover_color:$highlight_color;
     --hover_color_associate:$highlight_color_associate;

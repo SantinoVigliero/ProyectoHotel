@@ -56,7 +56,7 @@ select {
     border-color: rgb(169, 169, 169);
     border-image: initial;
 }
-select:not(:-internal-list-box) {
+select:not(:internal-list-box) {
     overflow: visible !important;
 }
 option {
@@ -68,7 +68,7 @@ option {
 }
 body,html {
     line-height: 200%;
-    font-size: var(--$font_size);
+    font-size: $font_size;
     font-family: $first_font;
     background: $body_background;
     color: $font_color;
