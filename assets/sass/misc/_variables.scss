@@ -7,6 +7,7 @@ $letter-spacing:0.05em;
 $body_background:#fff;
 $body_background_darken_3:#f7f7f7;
 $font_color:#333;
+$font_color_lighten: #666;
 $alternative_background:#F8F8F8;
 $highlight_color:#B9854D;
 $highlight_color_associate:#000;
@@ -34,3 +35,9 @@ $footer_brand_bg:$main_color;
 $footer_brand_color:$main_color_associate;
 $loyalty_bg: #595959;
 $loyalty_color: #fff;
+$alternative_background2_RGB: var(245,243,238);
+$room_features_bg_color: rgba(($alternative_background2_RGB), .5);
+$room_features_bg: var($room_features_bg_color);
+$alternative_background2_darken_5: #e2dcce;
+
+

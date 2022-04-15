@@ -1,0 +1,138 @@
+/*Secciones*/
+
+.section {
+    position: relative;
+    z-index: 100;
+    width: calc(100% - 60px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section.main_content .custom_logo {
+    margin: 0 auto 2em;
+    text-align: center;
+    img {
+        max-width: 180px;
+        max-height: 180px;
+        height: auto;
+        width: auto;
+    }
+}
+.main_content .the_title {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.the_title {
+    font-weight: 600;
+    font-style: normal;
+    font-family: $first_font;
+    line-height: 120%;
+    position: relative;
+    letter-spacing: .05em;
+    color: $title_color;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+.section.info_section {
+    padding-top: 40px;
+}
+.section+.section {
+    padding-top: 80px;
+}
+.section.main_content + .section.info_section {
+    border-top: 1px solid $content_hr;
+}
+.section.info_section .container {
+    display: flex;
+}
+.section.info_section .col:first-child {
+    padding-left: 0;
+}
+.section.info_section .col {
+    flex-grow: 1;
+    width: 50%;
+    padding: 0 20px;
+}
+.section.info_section .col .title {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: $font_color;
+}
+.description strong {
+    color: $content_strong;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+.section.info_section .col:last-child {
+    padding-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px){
+    .section.info_section .col .title {
+        font-size: 1.3em;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .section.main_content + .section.info_section{
+        margin-top: 80px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .section_title, .the_title {
+        font-size: 32px;
+    }
+}
+@media (max-width: 991px){
+    .main_content.aside_content .container .content_wrap {
+        width: 100%;
+    }
+}
+@media (min-width: 768px){
+    #breadcrumb+.main_content {
+        padding-top: 0;
+    }
+}
+@media (max-width: 991px){
+    .main_content.aside_content .container {
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 991px){
+    .main_content.aside_content .container .aside {
+        width: 100%;
+        padding: 0 40px;
+        min-height: unset;
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 991px){
+    .main_content.aside_content .container .aside .thumb {
+        width: 100%;
+        position: relative;
+        height: 0;
+        padding-bottom: 60%;
+        top: auto;
+        left: auto;
+        bottom: auto;
+        margin-bottom: 40px;
+    }
+}

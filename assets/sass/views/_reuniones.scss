@@ -1,0 +1,10 @@
+@media (min-width: 992px){
+    .section.room_features .features_services .services .list.col_three {
+        column-count: 3;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .section.room_features .features_services .services .list.col_three {
+        column-count: 2;
+    }
+}

@@ -384,3 +384,195 @@
         padding: 0;
     }
 }
+
+
+
+
+
+
+
+/*Secciones*/
+.main_content, .section+.section {
+    padding-top: 80px;
+}
+.section {
+    position: relative;
+    z-index: 100;
+    width: calc(100% - 60px);
+    margin-left: auto;
+    margin-right: auto;
+}
+.section.room_features .features_services {
+    background: rgba(245,243,238, .5);
+    padding: 60px 40px;
+    .features{
+        max-width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            .item {
+                width: 25%;
+                padding: 0 10px;
+                margin: 20px 0;
+                text-align: center;
+                line-height: 170%;
+                border-width: 0 0 0 1px;
+                border-style: solid;
+                border-color: $alternative_background2_darken_5;
+                img {
+                    font-size: 42px;
+                    color: $font_color_lighten;
+                    margin-bottom: 10px;
+                }
+                .el_title {
+                    font-weight: bold;
+                    color: $title_color;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    .services {
+        max-width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+        .the_title {
+            margin-bottom: 1.5em;
+        }
+        .list {
+            line-height: 170%;
+            li, ul {
+                list-style: none inside none;
+            }
+            ul li {
+                margin: 10px 0;
+                position: relative;
+                padding-left: 20px;
+                &:before {
+                    content: "-";
+                    position: absolute;
+                    left: 0;
+                }
+            }
+            &.col_two {
+                column-count: 2;
+                column-gap: 60px;
+                column-rule: 1px solid $alternative_background2_darken_5;
+            }
+            &.col_three {
+                column-gap: 60px;
+                column-rule: 1px solid $alternative_background2_darken_5;
+            }
+        }
+    }
+    .features+.services {
+        margin-top: 40px;
+    }
+    .the_title {
+        font-weight: 600;
+        font-style: normal;
+        font-family: $first_font;
+        line-height: 120%;
+        position: relative;
+        letter-spacing: .05em;
+        color: $title_color;
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px){
+    .section_title, .the_title {
+        font-size: 32px;
+    }
+    .container {
+        max-width: 740px;
+    }
+}
+@media (min-width: 768px){
+    .section.room_features .features_services .features .list .item:nth-child(4n+1) {
+        border: none;
+    }
+}
+@media (max-width: 767px){
+    .section.room_features .features_services .features .list .item:first-child {
+        border-top: none;
+    }
+}
+@media (max-width: 767px){
+    .section.room_features .features_services .features .list .item {
+        width: 90%;
+        padding: 15px 0;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        border-width: 1px 0 0;
+    }
+}
+@media (max-width: 767px){
+    .section.room_features .features_services .features .list {
+        flex-direction: column;
+    }
+    .section.room_features .features_services .features .list {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 767px){
+    .section.room_features .features_services {
+        padding: 40px 20px;
+    }
+}
+@media (max-width: 767px){
+    .section.room_features .features_services .the_title {
+        font-size: 24px;
+    }
+}
+@media (max-width: 767px){
+    .section.room_features .features_services .features .list .item img {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 767px){
+    .section.room_features .features_services .services .the_title {
+        margin-bottom: 1em;
+    }
+}
+@media (max-width: 767px){
+    .section.room_features .features_services .services .list.col_two {
+        column-count: 1;
+    }
+}
+
+
+
+
+
+
