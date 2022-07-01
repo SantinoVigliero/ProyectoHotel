@@ -50,9 +50,8 @@ const DOMtotal = document.querySelector("#total");
 const DOMbotonVaciar = document.querySelector("#boton-vaciar");
 const miLocalStorage = window.localStorage;
   
-  
-// Funciones
-
+// Funciones ANTIGUO
+/*
 function renderizarHabitaciones() {
     baseDeDatos.forEach((info) => {
         //Estructura
@@ -92,35 +91,46 @@ function renderizarHabitaciones() {
         misHabitacionesCardBody.appendChild(misHabitacionesBoton);
         misHabitaciones.appendChild(misHabitacionesCardBody);
         DOMitems.appendChild(misHabitaciones);
+        
     });
-}
+};
+*/
 
-/*
-//ME LO PASO ANDRES
+//Codigo simplificado Funciona ( se me complico el boton pero funciona)
 function renderizarHabitaciones() {
 
     baseDeDatos.forEach((_info_) => {
   
-      const habitacion = document.createElement("div");
+        const habitacion = document.createElement("div");
+        const misHabitacionesBoton = document.createElement("button");
+        misHabitacionesBoton.classList.add("btn", "btn-primary");
+        misHabitacionesBoton.textContent = "+ 1 noche";
+        misHabitacionesBoton.setAttribute("marcador", _info_.id);
+        misHabitacionesBoton.addEventListener("click", añadirProductoALaReserva);
+        habitacion.innerHTML = 
+        `<div class="card-body">
+        <img class="img-fluid" src="${_info_.imagen}">
+        <h5 class="card-title">${_info_.nombre}</h5>
+        <p class="card-text">$${_info_.precio}</p>
+        </div>`;
   
-      habitacion.innerHTML = `<div class="card-body"><img class="img-fluid" src="${_info_.imagen}"><h5 class="card-title">${_info_.nombre}</h5><p class="card-text">$${_info_.precio}</p><button class="btn btn-primary" marcador=${_info_.id}>+</button></div>`;
-  
-      habitacion.classList.add("card", "col-sm-4");
-  
-      DOMitems.appendChild(habitacion);
+        habitacion.classList.add("card", "col-sm-4");
+        habitacion.appendChild(misHabitacionesBoton);
+        DOMitems.appendChild(habitacion);
+        
   
     });
   
 }
-*/
- 
+
+
 // Evento para añadir una habitacion a la reserva
   
 function añadirProductoALaReserva(evento) {
     reserva.push(evento.target.getAttribute("marcador"))
     renderizarReserva();
     guardarReservaEnLocalStorage();
-}
+};
   
 // Todos las habitaciones guardadas en la reserva
   
@@ -152,7 +162,7 @@ function renderizarReserva() {
     });
     // Mostrar el precio
     DOMtotal.textContent = calcularTotal();
-}
+};
 
 
 //Boton Pagar
@@ -160,10 +170,10 @@ const botonPagar =document.querySelector("#boton-pagar")
 botonPagar.addEventListener("click", () =>{
     Swal.fire(
         '¡Reserva realizada!',
-        '¡Lo esperamos en el Hotel!',
+        '¡Envie un email a esta dirección con sus datos para confirmar su reserva y acordar las fechas de su hospedaje! ¡Muchas gracias por elegirnos! reservas.palladio@accor.com',
         'success'
-      )
-})
+    );
+});
 //Boton vaciar
 const botonVaciar = document.querySelector("#boton-vaciar")
 botonVaciar.addEventListener("click", () => {
@@ -171,8 +181,8 @@ botonVaciar.addEventListener("click", () => {
         icon: 'error',
         title: '¡Reserva cancelada!',
         text: '¡Tu reserva ha sido cancelada!'
-      })
-})
+    });
+});
 
 // Evento para borrar un elemento de la reserva
   
@@ -183,7 +193,7 @@ function borrarItemReserva(evento) {
     });
     renderizarReserva();
     guardarReservaEnLocalStorage();
-}
+};
 
 // Se calcula el total de la reserva
   
@@ -194,7 +204,7 @@ function calcularTotal() {
         });
         return total + miItem[0].precio;
     }, 0).toFixed(2);
-}
+};
 
 // Vaciar la reserva
   
@@ -202,19 +212,29 @@ function vaciarReserva() {
     reserva = [];
     renderizarReserva();
     localStorage.clear();
-}
+};
 function guardarReservaEnLocalStorage () {
     miLocalStorage.setItem("reserva", JSON.stringify(reserva));
-}
+};
 
 function cargarReservaDeLocalStorage () {
     // ¿Existe un carrito previo guardado en LocalStorage?
     if (miLocalStorage.getItem("reserva") !== null) {
         // Carga la información
         reserva = JSON.parse(miLocalStorage.getItem("reserva"));
-    }
-}
-  
+    };
+};
+//JSON
+
+fetch ("./base.json")
+.then (response =>{
+    return response.json();
+})
+
+
+
+
+
 // Eventos
   
 DOMbotonVaciar.addEventListener("click", vaciarReserva);

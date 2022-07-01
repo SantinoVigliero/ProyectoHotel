@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "nombre": "Habitación Superior con cama King size",
+      "precio": 12500,
+      "imagen": "../../assets/img/Galeria de fotos/HabsySuits/Hab10.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Habitación Deluxe con cama king size y balcón privado",
+      "precio": 14250,
+      "imagen": "../../assets/img/Galeria de fotos/HabsySuits/Hab2.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Executive Room con cama king size, balcón privado y sofá cama",
+      "precio": 16500,
+      "imagen": "../../assets/img/Galeria de fotos/HabsySuits/Hab7.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Executive Room con 2 camas queen size y balcón privado",
+      "precio": 18000,
+      "imagen": "../../assets/img/Galeria de fotos/HabsySuits/Hab4.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Deluxe Suite con cama king size, balcón privado y sofá cama",
+      "precio": 20000,
+      "imagen": "../../assets/img/Galeria de fotos/HabsySuits/Hab16.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Deluxe Suite con 2 camas queen size y balcón privado",
+      "precio": 22000,
+      "imagen": "../../assets/img/Galeria de fotos/HabsySuits/Hab14.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Executive Suite con cama king size y exclusiva vista de la ciudad",
+        "precio": 30000,
+        "imagen": "../../assets/img/Galeria de fotos/HabsySuits/Hab19.jpg"
+    }
+]

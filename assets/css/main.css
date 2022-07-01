@@ -1626,3 +1626,7 @@ footer #loyalty {
 @media (min-width: 768px) and (max-width: 991px) {
   .section.room_features .features_services .services .list.col_three {
     column-count: 2; } }
+
+.btn-primary {
+  margin-bottom: 1em;
+}
