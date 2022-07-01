@@ -225,13 +225,13 @@ function cargarReservaDeLocalStorage () {
     };
 };
 //JSON
-
+/*
 fetch ("./base.json")
 .then (response =>{
     return response.json();
 })
 
-
+*/
 
 
 
